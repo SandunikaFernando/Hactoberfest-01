@@ -1,0 +1,21 @@
+<span style='color:#004a43'>#</span><span style='color:#004a43'>include</span><span style='color:#800000'>&lt;</span><span style='color:#40015a'>stdio.h</span><span style='color:#800000'>&gt;</span>
+ 
+<span style='color:#200080;font-weight:bold'>void</span> areaperi <span style='color:#308080'>(</span> <span style='color:#200080;font-weight:bold'>int</span> r<span style='color:#308080'>,</span> <span style='color:#200080;font-weight:bold'>float</span> <span style='color:#308080'>*</span>a<span style='color:#308080'>,</span> <span style='color:#200080;font-weight:bold'>float</span> <span style='color:#308080'>*</span>p <span style='color:#308080'>)</span>
+<span style='color:#406080'>{</span>
+<span style='color:#308080'>*</span>a <span style='color:#308080'>=</span> <span style='color:#008000'>3.14</span> <span style='color:#308080'>*</span> r <span style='color:#308080'>*</span> r <span style='color:#406080'>;</span>
+<span style='color:#308080'>*</span>p <span style='color:#308080'>=</span> <span style='color:#008c00'>2</span> <span style='color:#308080'>*</span> <span style='color:#008000'>3.14</span> <span style='color:#308080'>*</span> r <span style='color:#406080'>;</span>
+<span style='color:#406080'>}</span>
+ 
+<span style='color:#200080;font-weight:bold'>void</span> <span style='color:#400000'>main</span><span style='color:#308080'>(</span> <span style='color:#308080'>)</span>
+<span style='color:#406080'>{</span>
+<span style='color:#200080;font-weight:bold'>int</span> radius <span style='color:#406080'>;</span>
+<span style='color:#200080;font-weight:bold'>float</span> area<span style='color:#308080'>,</span> perimeter <span style='color:#406080'>;</span>
+ 
+<span style='color:#003060'>printf</span> <span style='color:#308080'>(</span> <span style='color:#800000'>"</span><span style='color:#0f69ff'>n</span><span style='color:#1060b6'>Enter radius of a circle </span><span style='color:#800000'>"</span> <span style='color:#308080'>)</span> <span style='color:#406080'>;</span>
+<span style='color:#003060'>scanf</span> <span style='color:#308080'>(</span> <span style='color:#800000'>"</span><span style='color:#0f69ff'>%d</span><span style='color:#800000'>"</span><span style='color:#308080'>,</span> <span style='color:#308080'>&amp;</span>radius <span style='color:#308080'>)</span> <span style='color:#406080'>;</span>
+ 
+areaperi <span style='color:#308080'>(</span> radius<span style='color:#308080'>,</span> <span style='color:#308080'>&amp;</span>area<span style='color:#308080'>,</span> <span style='color:#308080'>&amp;</span>perimeter <span style='color:#308080'>)</span> <span style='color:#406080'>;</span>
+ 
+<span style='color:#003060'>printf</span> <span style='color:#308080'>(</span> <span style='color:#800000'>"</span><span style='color:#1060b6'>Area = </span><span style='color:#0f69ff'>%f</span><span style='color:#800000'>"</span><span style='color:#308080'>,</span> area <span style='color:#308080'>)</span> <span style='color:#406080'>;</span>
+<span style='color:#003060'>printf</span> <span style='color:#308080'>(</span> <span style='color:#800000'>"</span><span style='color:#0f69ff'>n</span><span style='color:#1060b6'>Perimeter = </span><span style='color:#0f69ff'>%f</span><span style='color:#800000'>"</span><span style='color:#308080'>,</span> perimeter <span style='color:#308080'>)</span> <span style='color:#406080'>;</span>
+<span style='color:#406080'>}</span>
